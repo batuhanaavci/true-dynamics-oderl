@@ -25,19 +25,26 @@ For specific environments, use the following commands:
 - **Acrobot**: `python oderl_true_dynamics/runner_acro.py`
 
 ## Results
-Below are sample results from different environments:
+Below are sample results from different environments displayed in a 2 by 2 grid:
 
-### Pendulum
-![Pendulum Result](./oderl_true_dynamics/results/videos/pendulum/round_17_episode_200.gif)
-
-### Cartpole
-![Cartpole Result](./oderl_true_dynamics/results/videos/cartpole/round_35_episode_200.gif)
-
-### Cartpole Noisy
-![Cartpole Noisy Result](./oderl_true_dynamics/results/videos/cartpole_ns/round_2_episode_200.gif)
-
-### Acrobot
-![Acrobot Result](./oderl_true_dynamics/results/videos/acrobot/round_17_episode_200.gif)
+<table>
+  <tr>
+    <td><strong>Pendulum</strong></td>
+    <td><strong>Cartpole</strong></td>
+  </tr>
+  <tr>
+    <td><img src="./oderl_true_dynamics/results/videos/pendulum/round_17_episode_200.gif" alt="Pendulum Result"></td>
+    <td><img src="./oderl_true_dynamics/results/videos/cartpole/round_35_episode_200.gif" alt="Cartpole Result"></td>
+  </tr>
+  <tr>
+    <td><strong>Cartpole Noisy</strong></td>
+    <td><strong>Acrobot</strong></td>
+  </tr>
+  <tr>
+    <td><img src="./oderl_true_dynamics/results/videos/cartpole_ns/round_2_episode_200.gif" alt="Cartpole Noisy Result"></td>
+    <td><img src="./oderl_true_dynamics/results/videos/acrobot/round_17_episode_200.gif" alt="Acrobot Result"></td>
+  </tr>
+</table>
 
 ## Environment Information
 The project uses the following Python packages, as listed in `installed_packages.txt`:
