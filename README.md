@@ -25,7 +25,7 @@ For specific environments, use the following commands:
 - **Acrobot**: `python oderl_true_dynamics/runner_acro.py`
 
 ## Results
-Below are sample results from different environments displayed in a 2 by 2 grid:
+Below are sample test results from different environments:
 
 <table>
   <tr>
@@ -37,7 +37,7 @@ Below are sample results from different environments displayed in a 2 by 2 grid:
     <td><img src="./oderl_true_dynamics/results/videos/cartpole/round_35_episode_200.gif" alt="Cartpole Result"></td>
   </tr>
   <tr>
-    <td><strong>Cartpole Noisy</strong></td>
+    <td><strong>Cartpole Swing-up</strong></td>
     <td><strong>Acrobot</strong></td>
   </tr>
   <tr>
@@ -46,16 +46,23 @@ Below are sample results from different environments displayed in a 2 by 2 grid:
   </tr>
 </table>
 
-## Environment Information
-The project uses the following Python packages, as listed in `installed_packages.txt`:
+### Key Components:
+- **System Dynamics (`basic_mdl.py`)**  
+  - Defines the differential equations governing environment behavior.
+  - Models environment evolution under control policies.
 
-- numpy
-- gym
-- matplotlib
-- [other packages...]
+- **Training and Evaluation (`runner.py`)**  
+  - Runs reinforcement learning simulations on different OpenAI Gym environments.
+  - Logs results and policy performance metrics.
+
+- **Policy (`policies.py`)**  
+  - Defines the control policy structure.
+  - Implements the policy network architecture.
+
+- **Utils (`utils.py`)**  
 
 ## Disclaimer
-This project is an investigation into continuous-time reinforcement learning methods, assuming true dynamics scenarios. It is inspired by the work of Çağatay Yıldız, and the Continuous-Time Model-Based Reinforcement Learning paper.
+This project is an investigation into continuous-time reinforcement learning methods, assuming true dynamics scenarios. It is inspired by the work of Çağatay Yıldız, and the Continuous-Time Model-Based Reinforcement Learning paper. Code is mostly taken from the original repo, and modified to fit the needs of the project.
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
